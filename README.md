@@ -1,3 +1,10 @@
+GitHub'ın sunucu taraflı güvenlik filtresi (tex2svg beyaz listesi) \operatorname
+makrosunu engelliyor; ancak standart dikey matematik fontu olan \mathrm{...}
+(\mathrm{Im} ve \mathrm{unwrap}) makrosuna tam izin veriyor.
+
+İki yerdeki \operatorname ifadesini \mathrm ile değiştirdim. Tek tıkla
+kopyalayıp yapıştırabilirsin:
+
 <div align="center">
 
 # **Ahmet Eren Çokcoşkun (Eren)**
@@ -5,7 +12,7 @@
 
 [![Çağrı İşareti](https://img.shields.io/badge/Çağrı_İşareti-TA7CAE%20%7C%20YM7XNN-critical?style=flat-square&logo=rss&logoColor=white)](#)
 [![Zamir](https://img.shields.io/badge/Zamir-lokomotif%20%2F%20lokomotifler-blue?style=flat-square)](#)
-[![Ortam](https://img.shields.io/badge/Ortam-WSL2%20Ubuntu%2026.04%20%7C%20CachyOS-1793D1?style=flat-square&logo=linux&logoColor=white)](#)
+[![Ortam](https://img.shields.io/badge/Ortam-Win11%2026H2%20%7C%20WSL2%20Ubuntu%2026.04%20%7C%20CachyOS-1793D1?style=flat-square&logo=linux&logoColor=white)](#)
 [![Topluluk](https://img.shields.io/badge/Reddit-r%2FtransitTurkey%20Mod-FF4500?style=flat-square&logo=reddit&logoColor=white)](https://www.reddit.com/r/transitTurkey/)
 [![Konum](https://img.shields.io/badge/QTH-Kayseri%20%2F%20İstanbul%20(KM78)-success?style=flat-square)](#)
 
@@ -32,7 +39,7 @@ Araştırma Odağı : [ "Hesaplamalı Elektromanyetik ve İyonosferik Plazma Fiz
 
 #### 1. İyonosferik Plazma Fiziği, Elektromanyetik Yayılım ve SDR Tabanlı Sondaj
 * **Lisans Bitirme Tezi (Capstone Research):** **HF Sayısal Modları (FT8/WSPR) ve SDR Kullanılarak Çok-Bantlı Fırsatçı İyonosferik Algılama: $`\text{D}, \text{E}, \text{E}_s, \text{F}_1, \text{F}_2`$ Katman Dinamikleri ve Mikro-Doppler Kestirimi.**
-* **Magneto-İyonik Ortam Modellemesi:** Orta enlem iyonosferinde Dünya'nın jeomanyetik alanı $`\mathbf{B}_0`$ ve elektron-nötr çarpışma frekansı $`\nu(h)`$ altında yayılan elektromanyetik dalgaların **Appleton-Hartree** ve kinetik **Sen-Wyller** formülasyonları ile incelenmesi; Sıradan (O-Mode) ve Olağanüstü (X-Mode) dalga kırılma indislerinin $`\tilde{n}`$ ve sapmalı/sapmasız sönümleme katsayılarının $`\alpha = -\operatorname{Im}(k)`$ sayısal analizi:
+* **Magneto-İyonik Ortam Modellemesi:** Orta enlem iyonosferinde Dünya'nın jeomanyetik alanı $`\mathbf{B}_0`$ ve elektron-nötr çarpışma frekansı $`\nu(h)`$ altında yayılan elektromanyetik dalgaların **Appleton-Hartree** ve kinetik **Sen-Wyller** formülasyonları ile incelenmesi; Sıradan (O-Mode) ve Olağanüstü (X-Mode) dalga kırılma indislerinin $`\tilde{n}`$ ve sapmalı/sapmasız sönümleme katsayılarının $`\alpha = -\mathrm{Im}(k)`$ sayısal analizi:
 
 ```math
 \tilde{n}^2 = (\mu - j\chi)^2 = 1 - \frac{X}{1 - jZ - \frac{Y_T^2}{2(1 - X - jZ)} \pm \sqrt{\frac{Y_T^4}{4(1 - X - jZ)^2} + Y_L^2}}
@@ -41,7 +48,7 @@ Araştırma Odağı : [ "Hesaplamalı Elektromanyetik ve İyonosferik Plazma Fiz
 * **Zamanla Değişen Kanal Karakterizasyonu (Watterson Modeli — ITU-R F.1487):** Çok-yollu (multipath) gökyüzü dalgası yayılımında kanal dürtü yanıtı $`h(\tau, t)`$ ve **Kanal Saçılma Fonksiyonu (Scattering Function)** $`S(\tau, f_d)`$ kestirimi; Gezinen İyonosferik Düzensizlikler (TID) ve Ani İyonosferik Bozulmaların (SID / Solar Flare) alt-paketsel faz türevi üzerinden tespiti:
 
 ```math
-h(\tau, t) = \sum_{m=1}^{M} G_m(t) \, e^{j 2\pi f_{d,m}(t) t} \, \delta(\tau - \tau_m(t)), \qquad f_d(t) = \frac{1}{2\pi} \frac{d}{dt}\left[\operatorname{unwrap}\left(\arctan\frac{Q(t)}{I(t)}\right)\right]
+h(\tau, t) = \sum_{m=1}^{M} G_m(t) \, e^{j 2\pi f_{d,m}(t) t} \, \delta(\tau - \tau_m(t)), \qquad f_d(t) = \frac{1}{2\pi} \frac{d}{dt}\left[\mathrm{unwrap}\left(\arctan\frac{Q(t)}{I(t)}\right)\right]
 ```
 
 * **Geliştirilen Modüller & Mühendislik Çıktıları (Artifacts):**
@@ -88,10 +95,10 @@ h(\tau, t) = \sum_{m=1}^{M} G_m(t) \, e^{j 2\pi f_{d,m}(t) t} \, \delta(\tau - \
 
 | Sistem | Ortam & Donanım Spesifikasyonu |
 | :--- | :--- |
-| **Ana İş İstasyonu (`erenix@DESKTOP-LLPQDR9`)** | Windows 11 & **WSL2 (`Ubuntu 26.04.1 LTS`, Kernel 6.18, WSLg Wayland)** · Intel Core i7-13700F (24 Threads) · NVIDIA GeForce RTX 4070 Ti (12 GB VRAM) · 27" 1440p + 24" 1080p (Dikey) |
+| **Ana İş İstasyonu (`DESKTOP-LLPQDR9`)** | **Windows 11 Pro (26H2)** & **WSL2 (`Ubuntu 26.04.1 LTS`, Kernel 6.18)** · MSI `MS-7D32` · Intel Core i7-13700F (8P+8E / 24T) · NVIDIA GeForce RTX 4070 Ti @ 3.10 GHz (12 GB VRAM) · **32 GB RAM** · ~3.2 TB Depolama · **MSI MAG 274QF** (27" 1440p 120Hz) + **ViewSonic VG2448** (24" 1080p Dikey) |
 | **Mobil Saha Terminali (`host: lokomotif`)** | Acer Spin · **CachyOS Linux (Arch Base)** · Wayland · Openbox · Zen Browser |
 | **CAS & Sembolik Hesaplama** | **TI-Nspire CX II-T CAS (`Ndless` SDK)** · Sembolik cebir, diferansiyel denklem çözümü ve devre/sinyal analizi |
-| **Yazılım, Simülasyon & Dizgi** | Python (`NumPy`, `SciPy`, `PyTorch`, `SoapySDR`), MATLAB, C/C++, **Typst** (`.typ`), **LaTeX** (`.tex`) |
+| **Yazılım, Simülasyon & Dizgi** | Python (`NumPy`, `SciPy`, `PyTorch`, `SoapySDR`), MATLAB, C/C++, PowerShell 7.6, **Typst** (`.typ`), **LaTeX** (`.tex`) |
 
 <div align="center">
 
