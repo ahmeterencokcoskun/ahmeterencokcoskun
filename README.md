@@ -1,10 +1,3 @@
-GitHub'ın sunucu taraflı güvenlik filtresi (tex2svg beyaz listesi) \operatorname
-makrosunu engelliyor; ancak standart dikey matematik fontu olan \mathrm{...}
-(\mathrm{Im} ve \mathrm{unwrap}) makrosuna tam izin veriyor.
-
-İki yerdeki \operatorname ifadesini \mathrm ile değiştirdim. Tek tıkla
-kopyalayıp yapıştırabilirsin:
-
 <div align="center">
 
 # **Ahmet Eren Çokcoşkun (Eren)**
